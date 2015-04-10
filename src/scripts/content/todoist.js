@@ -10,7 +10,8 @@ togglbutton.render('.task_item .content:not(.toggl)', {observe: true}, function 
   link = togglbutton.createTimerLink({
     className: 'todoist',
     description: container.firstChild.textContent,
-    projectName: projectElem && projectElem.textContent
+    projectName: projectElem && projectElem.textContent,
+    tags: [$('.project_link').firstChild.innerHTML]
   });
 
   container.insertBefore(link, container.lastChild);
