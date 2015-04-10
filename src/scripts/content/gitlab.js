@@ -3,20 +3,24 @@
 
 'use strict';
 
-togglbutton.render('.content .page-title:not(.toggl)', {observe: true}, function (elem) {
+togglbutton.render('.page-title:not(.toggl)', {observe: true}, function (elem) {
   var link,  description,
     numElem = $('.page-title'),
-    titleElem = $(".issue-box .title"),
+    titleElem = $(".issue-title"),
     projectElem = $('.title').firstChild;
 
   description = titleElem.textContent;
-  description = numElem.firstChild.textContent.trim() + " " + description.trim();
+  var issuenumber = elem.innerHTML.match("Issue (?:#\d*).*");
+  var myRegexp = /Issue (#\d+)/g;
+  var match = myRegexp.exec(issuenumber);
+  description = match[1]+" "+description;
 
   link = togglbutton.createTimerLink({
     className: 'gitlab',
     description: description,
-    projectName: projectElem.textContent.split(' / ').pop()
+    projectName: projectElem.textContent,
+    tags: [$('.title span').lastChild.getAttribute('href')]
   });
 
-  $('.content .page-title').appendChild(link);
+  $('.page-title').appendChild(link);
 });
