@@ -148,6 +148,7 @@ var Settings = {
         '<option value="Trac">Trac</option>' +
         '<option value="Trello">Trello</option>' +
         '<option value="Unfuddle">Unfuddle</option>' +
+        '<option value="Workfront">Workfront</option>' +
         '<option value="Worksection">Worksection</option>' +
         '<option value="Wrike">Wrike</option>' +
         '<option value="Wunderlist">Wunderlist</option>' +
