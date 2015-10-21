@@ -8,7 +8,7 @@
 
 __All the convenience of the [official "Toggl Button" extension][96], with the added benefit of custom websites.__
 
-Does your company use a private Trac installation for work requests? Or maybe you frequently report bugs for a niche website using their Redmine instance? 
+Does your company use a private Trac installation for work requests? Or maybe you frequently report bugs for a niche website using their Redmine instance?
 Based on the popular "Toggl Button" Chrome extension, this modified version will allow you to integrate Toggl into any website you want, as long as it is running one of these supported services:
 
 ## Compatible services
@@ -56,6 +56,7 @@ Based on the popular "Toggl Button" Chrome extension, this modified version will
   - [BamBam][43]
   - [GQueue][44]
   - [Wrike][45]
+  - [Workfront][46]
   
 ## Installing from the Web Store
 
@@ -142,6 +143,7 @@ If you'd like to make a change related to another feature, you should fork the [
 [43]: https://www.dobambam.com/
 [44]: https://www.gqueues.com/
 [45]: https://www.wrike.com/
+[46]: http://www.workfront.com/
 [96]: https://github.com/toggl/toggl-button
 [98]: https://github.com/sfarbota/toggl-button-for-custom-websites/pulls
 [99]: https://github.com/toggl/toggl-button/pulls
