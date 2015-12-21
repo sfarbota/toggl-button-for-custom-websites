@@ -327,6 +327,9 @@ var TogglButton = {
               case "Unfuddle":
                 chrome.tabs.executeScript({file: 'scripts/content/unfuddle.js'});
                 break;
+              case "Workfront":
+                chrome.tabs.executeScript({file: 'scripts/content/workfront.js'});
+                break;
               case "Worksection":
                 chrome.tabs.executeScript({file: 'scripts/content/worksection.js'});
                 break;
