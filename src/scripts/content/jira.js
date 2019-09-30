@@ -46,5 +46,10 @@ togglbutton.render('.issue-header-content:not(.toggl)', {observe: true}, functio
   li = createTag('li', 'toolbar-item');
   li.appendChild(link);
   ul.appendChild(li);
-  $('.toolbar-split-left').appendChild(ul);
+  
+  if(!$('.toolbar-split-left')[0]) {
+    $('.issue-header-content').append('<div class="toolbar-split-left" />')
+  }
+  
+  $('.toolbar-split-left').appendChild(ul);  
 });
